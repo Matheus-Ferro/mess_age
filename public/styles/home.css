@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.let_message_btn {
+  float: right;
+}
+
+.center_container {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background-color: #000000;
+  border: 1px solid #ffffff2f;
+  width: calc(35% - 1px);
+}
+
+.right_container {
+  display: flex;
+  width: 20%;
+  margin-top: 5px;
+  flex-direction: column;
+  align-content: center;
+  float: right;
+  background-color: #000000;
+}
+
+.right_container > h1 {
+  font-size: 16pt;
+  text-align: center;
+}
+
+.local_text_input {
+  padding: 10px;
+  border: 1px solid #ffffff00;
+  width: calc(100% - 22px);
+}
+
+.codename_input {
+  font-weight: 700;
+}
+
+.main_text_area {
+  height: 150px;
+  resize: none;
+}
+
+.local_submit_btn {
+  float: right;
+  margin: 10px 10px 10px 0;
+}
+
+.local_submit_btn:hover {
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.message_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 1px solid #ffffff2f;
+  cursor: pointer;
+}
+
+.message_container:hover {
+  background-color: #ffffff10;
+}
+
+.error {
+  display: none;
+  margin-top: 18px;
+  padding: 10px;
+}
+
+.codename {
+  font-size: 16pt;
+}
+
+.message {
+  margin-top: 15px;
+}
+
+.date {
+  margin-top: 10px;
+  font-size: 10pt;
+  text-align: left;
+}
+
+.control {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+i {
+  font-size: 1.4rem;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 28px;
+  transition: 250ms;
+  text-align: center;
+  width: 28px;
+  cursor: pointer;
+}
+
+i.bi-arrow-up:hover {
+  background-color: #239f95a0;
+}
+
+i.bi-arrow-down:hover {
+  background-color: #eb5f5da0;
+}
+
+i.bi-chat:hover {
+  background-color: #fabc74a0;
+}
+
+i.bi-flag-fill:hover {
+  background-color: #bb1542a0;
+}
+
+@media only screen and (max-width: 600px) {
+  .center_container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: #000000;
+    border: 1px solid #ffffff2f;
+    width: 100%;
+  }
+}

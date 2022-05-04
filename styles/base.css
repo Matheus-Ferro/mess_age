@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main_menu {
+  display: flex;
+  position: sticky;
+  background-color: #000000;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #ffffff2f;
+  padding: 15px;
+  width: calc(100%);
+}
+
+.main_menu > a {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30pt;
+}
+
+.main_menu > a > p {
+  display: inline;
+  font-style: normal;
+}
+
+.main_btn {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 15pt;
+  font-style: italic;
+  padding: 15px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.main_btn:hover {
+  box-shadow: 0px 0px 50px 2px rgba(255, 255, 255, 0.3);
+}
+
+.std_text_input{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.std_text_input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  border-top: 1px solid #ffffff2f;
+  background-color: #000000;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > p {
+  margin: 10px 20px 10px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main_menu {
+    display: flex;
+    position: sticky;
+    background-color: #000000;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #ffffff2f;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .main_menu > a {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 16pt;
+  }
+  
+  .main_menu > a > p {
+    display: inline;
+    font-style: normal;
+  }
+  
+  .main_btn {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 10pt;
+    font-style: italic;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    transition: 250ms;
+  }
+  
+  .main_btn:hover {
+    box-shadow: 0px 0px 50px 2px rgba(255, 255, 255, 0.3);
+  }
+}

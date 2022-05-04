@@ -1,0 +1,45 @@
+.main_container {
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 90vh;
+}
+
+.main_container > p {
+  font-size: 16pt;
+  margin-top: 15px;
+}
+
+.main_container > h1 {
+  font-size: 34pt;
+  margin-top: 15px;
+}
+
+.dive_in_btn {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_container {
+    display: flex;
+    padding: 20px;
+    background-color: #000000;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 75vh;
+  }
+  
+  .main_container > p {
+    font-size: 14pt;
+  }
+  
+  .main_container > h1 {
+    font-size: 20pt;
+  }
+
+}
